@@ -46,3 +46,6 @@ You're done! If you want a custom domain keep reading!
 ## Custom Domain
 
 If you really want a custom domain, go to the worker dashboard and go to your worker's settings, there will be a tab called `Domains & Routes` that you can set a custom domain for.
+
+## Usage
+Just use fetch to get the contents of your REST api, it will return ONLY the last song played. [Check the docs here](https://www.last.fm/api/show/user.getRecentTracks).
