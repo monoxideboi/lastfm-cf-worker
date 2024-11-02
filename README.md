@@ -16,7 +16,7 @@ name it lastfmcfworker, or whatever you want
 ```
 cd lastfmcfworker
 ```
-IMPORTANT!! THEN you need to edit the wrangler.toml file. Just find the USER variable (near the top with all caps!) and replace the name! !!IMPORANT
+###IMPORTANT!! THEN you need to edit the wrangler.toml file. Just find the USER variable (near the top with all caps!) and replace the name! !!IMPORANT
 
 
 
