@@ -17,3 +17,5 @@ npm run deploy
 You will need to get an api key from lastfm. Once you do, do
 `npx wrangler secret put KEY`
 and put in your key in the input afterwards.
+
+By default the cache time is 2 seconds, feel free to increase this to whatever you want but the limit is 5 per second!
