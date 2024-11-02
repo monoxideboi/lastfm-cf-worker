@@ -7,7 +7,9 @@ If you do not have
 Deploy
 ```
 npm create cloudflare@latest -- --template https://github.com/monoxideboi/lastfm-cf-worker.git
-(name: lastfmcfworker, or whatever you want)
+```
+name: lastfmcfworker, or whatever you want
+```
 cd lastfmcfworker
 npm run deploy
 ```
