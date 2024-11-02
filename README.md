@@ -18,7 +18,7 @@ cd lastfmcfworker
 ```
 THEN you need to edit the wrangler.toml file. Just find the USER variable (near the top with all caps!) and replace the name!
 ```
-npm run deploy
+npx wrangler deploy
 ```
 You will need to get an api key from lastfm. Once you do, do
 `npx wrangler secret put KEY`
