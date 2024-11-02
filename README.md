@@ -51,4 +51,4 @@ If you really want a custom domain, go to the worker dashboard and go to your wo
 Just use fetch to get the contents of your REST api, it will return ONLY the last song played. [Check the docs here](https://www.last.fm/api/show/user.getRecentTracks).
 
 ## Help
-My discord is monoxideboi, feel free to DM or ping me if you need help.
+My discord is [monoxideboi](https://discord.com/users/375379813403328523), feel free to DM or ping me if you need help.
