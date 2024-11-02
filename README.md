@@ -15,15 +15,28 @@ npm create cloudflare@latest -- --template https://github.com/monoxideboi/lastfm
 name it lastfmcfworker, or whatever you want
 ```
 cd lastfmcfworker
+```
+THEN you need to edit the wrangler.toml file. Just find the USER variable (near the top with all caps!) and replace the name!
+```
 npm run deploy
 ```
-
 You will need to get an api key from lastfm. Once you do, do
 `npx wrangler secret put KEY`
 and put in your key in the input afterwards.
 
-By default the cache time is 2 seconds, feel free to increase this to whatever you want but the limit is 5 per second!
+By default the cache time is 2 seconds, feel free to increase this to whatever you want in [the index.js](./src/index.js) but lastfm's limit is 5 per second!
 
 ## Webapp
 
-Go to https://workers.cloudflare.com/, click log in and go to the dashboard.
+Go to [the cloudflare workers page](https://workers.cloudflare.com/), click log in and go to the dashboard.
+Click Create Worker, and name it whatever you want. Create it.
+Then click edit code, and copy paste [the index.js](./src/index.js), replacing the original code. Ignore the error messages.
+Then go back with the arrow in the top left (and save), and click on settings. Click the `Variables and Secrets` tab. Click the + Add button to add a variable.
+First make the USER variable, name is all caps and make the value your lastfm username.
+Then make the KEY variable, again all caps and make the value your API key. Feel free to encrypt this one.
+
+You're done! If you want a custom domain keep reading!
+
+## Custom Domain
+
+If you really want a custom domain, go to the worker dashboard and go to your worker's settings, there will be a tab called `Domains & Routes` that you can set a custom domain for.
