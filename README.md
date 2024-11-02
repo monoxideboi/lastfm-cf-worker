@@ -2,7 +2,11 @@
 
 This is a cloudflare worker that will create a restapi that will return your most recently/currently playing song! This lets you keep your api key yours and hidden while caching requests!
 
-If you do not have 
+If you do not have a cloudflare account go get it!
+
+If you do not want to use the [cli](#CLI) do it with the [webapp](#webapp)
+
+## CLI
 
 Deploy
 ```
@@ -19,3 +23,7 @@ You will need to get an api key from lastfm. Once you do, do
 and put in your key in the input afterwards.
 
 By default the cache time is 2 seconds, feel free to increase this to whatever you want but the limit is 5 per second!
+
+## Webapp
+
+Go to https://workers.cloudflare.com/, click log in and go to the dashboard.
