@@ -16,7 +16,10 @@ name it lastfmcfworker, or whatever you want
 ```
 cd lastfmcfworker
 ```
-THEN you need to edit the wrangler.toml file. Just find the USER variable (near the top with all caps!) and replace the name!
+IMPORTANT!! THEN you need to edit the wrangler.toml file. Just find the USER variable (near the top with all caps!) and replace the name! !!IMPORANT
+
+
+
 ```
 npx wrangler deploy
 ```
