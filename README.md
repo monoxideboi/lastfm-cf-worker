@@ -2,6 +2,7 @@
 
 This is a cloudflare worker that will create a restapi that will return your most recently/currently playing song! This lets you keep your api key yours and hidden while caching requests!
 
+This button sucks but if u can figure out how to work this go ahead :(
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/monoxideboi/lastfm-cf-worker)
 
 If you do not have a cloudflare account go get it!
