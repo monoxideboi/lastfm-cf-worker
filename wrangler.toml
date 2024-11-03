@@ -1,8 +1,12 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "my-first-worker"
+name = "lastfm"
 main = "src/index.js"
 compatibility_date = "2024-10-22"
 compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# CHANGE YOUR USERNAME HERE!!!
+USER="monoxideboi"
 
 # Workers Logs
 # Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/

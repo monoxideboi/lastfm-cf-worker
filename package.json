@@ -1,5 +1,5 @@
 {
-  "name": "lastfm-cloudflare-worker",
+  "name": "lastfm",
   "version": "0.0.0",
   "private": true,
   "scripts": {

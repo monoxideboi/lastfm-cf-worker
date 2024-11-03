@@ -10,11 +10,7 @@
 
 export default {
 	async fetch(request, env, ctx) {
-
-
-		const user = "monoxide-boi";
-
-		const url = `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${user}&api_key=${env.KEY}&limit=1&format=json`;
+		const url = `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${env.USER}&api_key=${env.KEY}&limit=1&format=json`;
 		const cacheUrl = new URL(url);
 
 
