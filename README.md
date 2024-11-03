@@ -55,4 +55,7 @@ Just use fetch to get the contents of your REST api, it will return ONLY the las
 
 ## Help
 My discord is [monoxideboi](https://discord.com/users/375379813403328523), feel free to DM or ping me if you need help.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7d50415ce1ae58db4d4a502308a683a78bffba99
