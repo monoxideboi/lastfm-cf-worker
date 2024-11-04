@@ -13,7 +13,6 @@ export default {
 		const url = `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${env.USER}&api_key=${env.KEY}&limit=1&format=json`;
 		const cacheUrl = new URL(url);
 
-
 		// Construct the cache key from the cache URL
 		const cacheKey = new Request(cacheUrl.toString());
 		const cache = caches.default;
@@ -39,6 +38,7 @@ export default {
 			// Cache API respects Cache-Control headers. Setting s-max-age to 2
 			// will limit the response to be in cache for 2 seconds max
 			response.headers.append("Cache-Control", "s-maxage=2");
+			response.headers.append("Access-Control-Allow-Origin", env.SITE);
 
 			// Any changes made to the response here will be reflected in the cached value
 			ctx.waitUntil(cache.put(cacheKey, response.clone()));

@@ -19,7 +19,7 @@ name it lastfmcfworker, or whatever you want
 ```
 cd lastfmcfworker
 ```
-### IMPORTANT!! THEN you need to edit the wrangler.toml file. Just find the USER variable (near the top with all caps!) and replace the name! !!IMPORANT
+### IMPORTANT!! THEN you need to edit the wrangler.toml file. Just find the USER variable and the SITE variable (near the top with all caps!) and replace the fields!
 
 ```
 npx wrangler deploy
@@ -41,6 +41,8 @@ Then click edit code, and copy paste [the index.js](./src/index.js), replacing t
 Then go back with the arrow in the top left (and save), and click on settings. Click the `Variables and Secrets` tab. Click the + Add button to add a variable.
 
 First make the USER variable, name is all caps and make the value your lastfm username.
+
+Then make the SITE variable, put the URL of your site (this is for CORS, you can make the URL "*" to allow all sites)
 
 Then make the KEY variable, again all caps and make the value your API key. Feel free to encrypt this one.
 
