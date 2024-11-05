@@ -6,8 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 
 [vars]
 # CHANGE YOUR USERNAME HERE!!!
-USER="monoxideboi"
-SITE="https://asoik.dev"
+USER="monoxide-boi"
 
 # Workers Logs
 # Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/

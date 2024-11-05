@@ -38,7 +38,9 @@ export default {
 			// Cache API respects Cache-Control headers. Setting s-max-age to 2
 			// will limit the response to be in cache for 2 seconds max
 			response.headers.append("Cache-Control", "s-maxage=2");
-			response.headers.append("Access-Control-Allow-Origin", env.SITE);
+			
+			response.headers.append("Access-Control-Allow-Origin", "*");
+			response.headers.append("Access-Control-Allow-Headers", "*")
 
 			// Any changes made to the response here will be reflected in the cached value
 			ctx.waitUntil(cache.put(cacheKey, response.clone()));
